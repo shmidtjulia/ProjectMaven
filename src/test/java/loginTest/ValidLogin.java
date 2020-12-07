@@ -37,11 +37,12 @@ public class ValidLogin {
     public void ValidLogin (){
         loginPage.OpenPage();
         //loginPage.openLoginPage("https://github.com/login");
-        loginPage.InputLoginName("shmidtjulia");
-        loginPage.InputPass("Prk42037");
+        loginPage.InputLoginName("___");
+        loginPage.InputPass("___");
         loginPage.ClickSubmitButton();
-        String s1 = homePage.getTitle();
-        System.out.println(s1);
+        //homePage.checkZagolovok("Discover interesting projects and people to populate your personal news feed.");
+        //System.out.println(s1);
+        homePage.checkVisibilityRepositoryButton();
 
     }
 

@@ -19,8 +19,6 @@ public class ParentPage {
         Logger log;
         ActionsWithWebElements actionsWithWebElements;
 
-    @FindBy(xpath = "//h2[contains(text(),'Discover interesting projects and people to popula')]")
-    protected WebElement RepositoryBlock;
 
     public ParentPage (WebDriver driver) {
         this.driver = driver;
@@ -29,18 +27,9 @@ public class ParentPage {
         PageFactory.initElements(driver, this); //Превращает элементы by в элементы webelements
     }
 
-    public String getTitle (){
+    //Header
 
-        return driver.getTitle();
-    }
+    //Footer
 
-    protected void checkTitle (String title){
-
-        Assert.assertEquals ("Title not expected", getTitle(), title);
-    }
-
-    protected void checkZagolovok(String zagolovokText){
-        Assert.assertEquals("Zagolovok is not ", RepositoryBlock.getText(), zagolovokText);
-    }
 
 }

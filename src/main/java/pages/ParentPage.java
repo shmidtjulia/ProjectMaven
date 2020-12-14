@@ -26,10 +26,4 @@ public class ParentPage {
         actionsWithWebElements = new ActionsWithWebElements(driver);
         PageFactory.initElements(driver, this); //Превращает элементы by в элементы webelements
     }
-
-    //Header
-
-    //Footer
-
-
 }
